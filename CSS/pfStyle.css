@@ -12,6 +12,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   height: 2000px;
@@ -215,40 +217,54 @@ span.hamburger-line {
 .box-about-left,
 .box-about-right {
   width: 50vw;
+  display: flex;
+  flex-direction: column;
 }
 .prenom {
   color: #fff;
-  font-size: 80px;
+  font-size: 120px;
   font-family: "Spartan", sans-serif;
   padding: 0;
-  margin: 0;
+  margin-left: 30%;
+  margin-top: 10%;
+  margin-bottom: 0;
 }
 .nom {
   color: #fff;
-  font-size: 80px;
+  font-size: 120px;
   font-family: "Spartan", sans-serif;
   padding: 0;
-  margin: 0;
+  margin-left: 45%;
+  margin-top: 0;
+  margin-bottom: 0;
+  
 }
 .imgAboutLeft{
   width: 90%;
-  margin-top: -151px;
+  margin-top: -340px;
 }
 .imgAboutRight {
-  width: 90%;
- top: 0;
- left: 0;
+  width: 100%;
+  margin-top: -14px;
+  float: right; 
+
 }
+
 .concepteur {
   text-transform: uppercase;
-  color: #fff;
-  font-size: 21px;
+  color: white;
+  letter-spacing: 10px;
+  font-size: 30px;
   font-family: "Roboto Condensed", sans-serif;
+  margin-top: -110px;
+  margin-left: -50px;
+  padding: 0;
+
 }
 
 /* MEDIA QUERY */
 
-@media (max-width: 908px) {
+/* @media (max-width: 908px) {
   .banner {
     text-align: center;
   }
@@ -279,7 +295,7 @@ span.hamburger-line {
   }
 
   /* NAV */
-  .nav {
+  /* .nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -314,10 +330,10 @@ span.hamburger-line {
     color: #fff;
     margin: 0 1rem;
     padding: 1rem;
-  }
+  } */
 
   /* SIDE-NAV */
-  .side-nav {
+  /* .side-nav {
     position: fixed;
     top: 5rem;
     left: -15.6rem;
@@ -361,10 +377,10 @@ span.hamburger-line {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     cursor: pointer;
-  }
+  } */
 
   /* HAMBUGER-ICON */
-  .hamburger-icon,
+  /* .hamburger-icon,
   span.hamburger-line {
     display: none;
   }
@@ -470,9 +486,9 @@ span.hamburger-line {
     display: inline-block;
     transition: all 0.4s;
   }
-}
+} */
 
-@media (max-width: 500px) {
+/*@media (max-width: 500px) {
   .banner {
     text-align: center;
   }
@@ -484,4 +500,4 @@ span.hamburger-line {
   .banner-sub-text {
     font-size: 2rem;
   }
-}
+} */
