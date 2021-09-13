@@ -35,13 +35,11 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #8ca0a7;
-  transition: 0.2s;
+  background: #a990ff;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  transition: 0.2s;
   background: #555;
 }
 
@@ -206,7 +204,7 @@ span.hamburger-line {
 
 /* About */
 
-.about {
+.top {
   height: 100vh;
   background-color: #7451eb;
   display: flex;
@@ -214,8 +212,8 @@ span.hamburger-line {
   padding-top: 8vh;
 }
 
-.box-about-left,
-.box-about-right {
+.boxTopLeft,
+.boxTopRight {
   width: 50vw;
   display: flex;
   flex-direction: column;
@@ -237,17 +235,15 @@ span.hamburger-line {
   margin-left: 45%;
   margin-top: 0;
   margin-bottom: 0;
-  
 }
-.imgAboutLeft{
+.imgTopLeft {
   width: 90%;
   margin-top: -340px;
 }
-.imgAboutRight {
+.imgTopRight {
   width: 100%;
   margin-top: -14px;
-  float: right; 
-
+  float: right;
 }
 
 .concepteur {
@@ -256,15 +252,50 @@ span.hamburger-line {
   letter-spacing: 10px;
   font-size: 30px;
   font-family: "Roboto Condensed", sans-serif;
-  margin-top: -110px;
+  margin-top: -150px;
   margin-left: -50px;
   padding: 0;
-
 }
+
+/* =================================================== */
+
+/* MEET */
+
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  border-bottom: red solid 2px;
+}
+
+.boxAboutLeft,
+.boxAboutRight {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.imgAboutTopLeft {
+  width: 79.5%;
+}
+
+.titleAbout {
+  text-transform: uppercase;
+  color: #7451eb;
+  font-size: 45px;
+  margin-top: 25%;
+}
+hr {
+  color: #7451eb;
+  border: #a990ff solid 3px;
+  margin-left: -10px;
+}
+
 
 /* MEDIA QUERY */
 
-/* @media (max-width: 908px) {
+@media (max-width: 908px) {
   .banner {
     text-align: center;
   }
@@ -295,7 +326,7 @@ span.hamburger-line {
   }
 
   /* NAV */
-  /* .nav {
+  .nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -330,10 +361,11 @@ span.hamburger-line {
     color: #fff;
     margin: 0 1rem;
     padding: 1rem;
-  } */
+  }
+  */
 
   /* SIDE-NAV */
-  /* .side-nav {
+   .side-nav {
     position: fixed;
     top: 5rem;
     left: -15.6rem;
@@ -377,10 +409,10 @@ span.hamburger-line {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     cursor: pointer;
-  } */
+  }
 
   /* HAMBUGER-ICON */
-  /* .hamburger-icon,
+  .hamburger-icon,
   span.hamburger-line {
     display: none;
   }
@@ -486,9 +518,9 @@ span.hamburger-line {
     display: inline-block;
     transition: all 0.4s;
   }
-} */
+}
 
-/*@media (max-width: 500px) {
+@media (max-width: 500px) {
   .banner {
     text-align: center;
   }
@@ -500,4 +532,4 @@ span.hamburger-line {
   .banner-sub-text {
     font-size: 2rem;
   }
-} */
+}
