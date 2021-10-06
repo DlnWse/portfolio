@@ -330,30 +330,31 @@ span.hamburger-line {
 .projet {
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border-bottom: red solid 2px;
 }
 
 .boxProjetLeft,
 .boxProjetRight {
   width: 50vw;
+  height: 20vh;
   display: flex;
   flex-direction: column;
 }
 
-.boxProjetLeft {
-  background-color: indianred;
-}
-
-.boxProjetRight {
-  background-color: hotpink;
+.boxProjetBottom{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  border: green solid 2px;
 }
 
 .imgProjetLeft {
-  height: 100%;
-  width: 100%;
-  margin-top: -350px;
-  margin-left: 550px;
+  margin-top: -220px;
+  margin-left: 380px;
+  height: 125%;
+  width: 125%;
 }
 
 
@@ -371,6 +372,51 @@ span.hamburger-line {
   margin-right: 10px;
   width: 90%;
   margin-left: -1%;
+}
+
+/* ==============Test Card================= */
+
+.card{  
+  width: 800px;  
+  height: 390px;  
+  background: rgb(0, 87, 128);  
+  position: relative;  
+  border-radius: 20px;  
+  cursor: pointer;  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.123);  
+}  
+.card img{  
+  position: absolute;  
+  width: 100%;  
+  border-radius: 10px;  
+}  
+.content{  
+  position: absolute;  
+  width: 100%;  
+  bottom: 0;  
+  height: 65px;  
+  padding: 0.4em 1.5em;  
+  font-size: 25px;  
+  background: transparent;   
+  border-radius: 2px;  
+  color: white;  
+  transform: scale(0.99999);  
+  border-top: 1px solid rgba(255, 255, 255, 0.164);  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);  
+  overflow: hidden;  
+  transition: all .4s;  
+}  
+.content p{  
+  font-size: 0.7em;  
+}  
+.card:hover .content{  
+  height: 200px;  
+  backdrop-filter: blur(5px); 
+  background-color: #7551eb48;
+}  
+.cardTitle{
+  padding: 0;
+  margin: 0;
 }
 
 /* =============================================================== */
