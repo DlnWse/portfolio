@@ -261,6 +261,7 @@ span.hamburger-line {
   height: 100vh;
   display: flex;
   flex-direction: row;
+  z-index: 1;
 }
 
 .boxAboutLeft,
@@ -331,7 +332,8 @@ span.hamburger-line {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  border-bottom: red solid 2px;
+  z-index: 10000;
+  background-color: #7451eb;
 }
 
 .boxProjetLeft,
@@ -342,33 +344,43 @@ span.hamburger-line {
   flex-direction: column;
 }
 
-.boxProjetBottom{
+.boxProjetBottom {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  border: green solid 2px;
+  
 }
 
 .imgProjetLeft {
-  margin-top: -220px;
+  margin-top: -80px;
   margin-left: 380px;
-  height: 125%;
-  width: 125%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: unset;
 }
 
+#lightSlider {
+  z-index: 10000;
+  margin-top: 7%;
+  margin-left: 5%;
+  margin-right: 5%;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
 
 .titleProjet {
   text-transform: uppercase;
-  color: #7451eb;
+  color: #fff;
   font-size: 45px;
   margin-top: 10%;
   margin-bottom: 0;
   margin-left: 50%;
 }
 .hrProjet {
-  color: #7451eb;
-  border: #7451eb solid 3px;
+  color: #fff;
+  border: #fff solid 3px;
   margin-right: 10px;
   width: 90%;
   margin-left: -1%;
@@ -376,47 +388,62 @@ span.hamburger-line {
 
 /* ==============Test Card================= */
 
-.card{  
-  width: 800px;  
-  height: 390px;  
-  background: rgb(0, 87, 128);  
-  position: relative;  
-  border-radius: 20px;  
-  cursor: pointer;  
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.123);  
-}  
-.card img{  
-  position: absolute;  
-  width: 100%;  
-  border-radius: 10px;  
-}  
-.content{  
-  position: absolute;  
-  width: 100%;  
-  bottom: 0;  
-  height: 65px;  
-  padding: 0.4em 1.5em;  
-  font-size: 25px;  
-  background: transparent;   
-  border-radius: 2px;  
-  color: white;  
-  transform: scale(0.99999);  
-  border-top: 1px solid rgba(255, 255, 255, 0.164);  
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);  
-  overflow: hidden;  
-  transition: all .4s;  
-}  
-.content p{  
-  font-size: 0.7em;  
-}  
-.card:hover .content{  
-  height: 200px;  
-  backdrop-filter: blur(5px); 
+.card {
+  width: 800px;
+  height: 390px;
+  background: rgb(0, 87, 128);
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card:hover{
+  transition: 0.5s;
+  box-shadow: 20px 20px #a990ff;
+}
+.card img {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 65px;
+  padding: 0.4em 1.5em;
+  font-size: 25px;
+  background: transparent;
+  border-radius: 2px;
+  color: white;
+  transform: scale(0.99999);
+  border-top: 1px solid rgba(255, 255, 255, 0.164);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.content p {
+  font-size: 0.7em;
+}
+.card:hover .content {
+  height: 200px;
+  backdrop-filter: blur(5px);
   background-color: #7551eb48;
-}  
-.cardTitle{
+ 
+}
+.cardTitle {
   padding: 0;
   margin: 0;
+}
+.imageBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.fab {
+  font-size: 65px;
+  color: #fff;
 }
 
 /* =============================================================== */

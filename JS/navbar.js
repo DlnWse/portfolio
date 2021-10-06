@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-      if ($(document).scrollTop() > 910) {
+      if ($(document).scrollTop() > 900) {
         $(".nav").css("background-color", "#7451eb");
         $(".nav-menu-link").css("color", "white");
       } else {

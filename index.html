@@ -6,19 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?xml version="1.0" encoding="UTF-8"?>
+    <title>Dylan Weisse</title>
+
+    <!-- ====================== LINK ============================= -->
+
     <link rel="stylesheet" href="./CSS/pfStyle.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <!-- ====================== SCRIPT ============================= -->
+
     <script defer src="./JS/navbar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Dylan Weisse</title>
+   
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
+   
+    <script type="text/javascript">
+    
+        $(document).ready(function() {
+
+          $("#lightSlider").lightSlider(
+              {
+                 item:2,   
+                 margin:2,
+                 control: true,
+                 currentPagerPosition: 'middle',
+              }
+          );
+          
+        });
+        
+      </script>
+
 </head>
+
+<!-- ====================== Body ============================= -->
 
 <body>
     <div class="nav">
@@ -148,7 +177,7 @@
                 <a href="#projet" class="aboutButton outset">En Savoir Plus +</a>
                 <a href="#contact" class="aboutButton inset">Me Contacter</a>
             </div>
-            <img src="./Image/design/ring.png" alt="" class="imgProjetLeft">
+            
         </div>
     </section>
 
@@ -159,24 +188,101 @@
         <div class="boxProjetLeft">
             <h2 class="titleProjet">Mes Projets</h2>
             <hr class="hrProjet">
+            
+
         </div>
 
         <div class="boxProjetBottom">
-
-            <div class="card">  
-                <img src="./Image/picsProject/porfolio.PNG" alt="">  
-                <div class="content">  
-                  <h2 class="cardTitle">Portfolio</h2>  
-                  <p>Vous etes ici ! Le site a été programmer en HTML, CSS, Javascript.</p>  
-                  <div class="imageBox">
-                      <img src="" alt="">
-                  </div>
-                </div>  
-              </div>  
-           
+            
+            <ul id="lightSlider">
+                <li>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./Image/picsProject/porfolio.PNG" alt="">
+                            <div class="content">
+                                <h2 class="cardTitle">Portfolio</h2>
+                                <p>Vous etes ici ! Le site a été programmer en HTML, CSS, Javascript.</p>
+                                <div class="imageBox">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./Image/picsProject/vdt.PNG" alt="">
+                            <div class="content">
+                                <h2 class="cardTitle">Site VDT Formation</h2>
+                                <p>Vous etes ici ! Le site a été programmer en PHP, HTML, CSS, Javascript.</p>
+                                <div class="imageBox">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-php"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./Image/picsProject/porfolio.PNG" alt="">
+                            <div class="content">
+                                <h2 class="cardTitle">Portfolio 3</h2>
+                                <p>Vous etes ici ! Le site a été programmer en HTML, CSS, Javascript.</p>
+                                <div class="imageBox">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./Image/picsProject/porfolio.PNG" alt="">
+                            <div class="content">
+                                <h2 class="cardTitle">Portfolio 4</h2>
+                                <p>Vous etes ici ! Le site a été programmer en HTML, CSS, Javascript.</p>
+                                <div class="imageBox">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="card">
+                            <img src="./Image/picsProject/porfolio.PNG" alt="">
+                            <div class="content">
+                                <h2 class="cardTitle">Portfolio 5</h2>
+                                <p>Vous etes ici ! Le site a été programmer en HTML, CSS, Javascript.</p>
+                                <div class="imageBox">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+       
         </div>
+        <!-- <img src="./Image/design/ring.png" alt="" class="imgProjetLeft"> -->
     </section>
 
 </body>
+
 
 </html>
