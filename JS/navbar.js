@@ -1,12 +1,12 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-      if ($(document).scrollTop() > 950) {
+      if ($(document).scrollTop() > 910) {
         $(".nav").css("background-color", "#7451eb");
         $(".nav-menu-link").css("color", "white");
       } else {
-        $(".nav").css("background-color", "white");
+        $(".nav").css("background-color", "transparant");
         $(".nav").css("transition", "0.3s");
-        $(".nav-menu-link").css("color", "#7451eb");
+        $(".nav-menu-link").css("color", "#fff");
         $(".nav-menu-link").css("transition", "0.1s");
       }
     });

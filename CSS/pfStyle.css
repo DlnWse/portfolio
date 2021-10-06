@@ -14,9 +14,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
-}
-body {
-  height: 2000px;
+  background-color: whitesmoke;
 }
 
 * {
@@ -52,13 +50,13 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   justify-content: space-between;
   z-index: 100;
 }
 
 .nav-brand {
-  color: #7451eb;
+  color: #fff;
   margin-left: 0.9375rem;
   margin-right: auto;
 }
@@ -76,7 +74,7 @@ ul.nav-menu {
 
 a.nav-menu-link {
   text-decoration: none;
-  color: #7451eb;
+  color: #fff;
   margin: 0 0.9375rem;
   padding: 1.1rem;
   transition: 0.3s;
@@ -86,7 +84,7 @@ a.nav-menu-link {
 a.nav-menu-link:hover {
   transform: scale(0.9);
   transition: 0.3s;
-  color: #000000;
+  color:whitesmoke;
   border-radius: 10rem;
   font-weight: 900;
 }
@@ -237,8 +235,8 @@ span.hamburger-line {
   margin-bottom: 0;
 }
 .imgTopLeft {
-  width: 90%;
-  margin-top: -340px;
+  width: 95%;
+  margin-bottom: -1000px;
 }
 .imgTopRight {
   width: 100%;
@@ -252,9 +250,7 @@ span.hamburger-line {
   letter-spacing: 10px;
   font-size: 30px;
   font-family: "Roboto Condensed", sans-serif;
-  margin-top: -150px;
-  margin-left: -50px;
-  padding: 0;
+  padding-top: 80%;
 }
 
 /* =================================================== */
@@ -265,7 +261,6 @@ span.hamburger-line {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  border-bottom: red solid 2px;
 }
 
 .boxAboutLeft,
@@ -276,21 +271,89 @@ span.hamburger-line {
   /* background-color: red; */
 }
 
-.imgAboutTopLeft {
-  width: 79.5%;
-}
 
 .titleAbout {
   text-transform: uppercase;
   color: #7451eb;
   font-size: 45px;
-  margin-top: 25%;
+  margin-top: 20%;
+  margin-bottom: 0;
 }
 hr {
   color: #7451eb;
-  border: #a990ff solid 3px;
+  border: #7451eb solid 3px;
   margin-left: -10px;
 }
+.paraAbout{
+  font-size: 25px;
+  line-height: 170%;
+  text-align: justify;
+  padding-right: 100px;
+  padding-left: 30px;
+}
+
+.aboutButtonBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.aboutButton{
+  background-color: #7451eb;
+  border: 2px solid #7451eb;
+  height: 75px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 2.2%;
+  transition: 0.5s;
+  box-shadow: 3px 3px 1px 1px #a990ff ;
+  border-radius: 2px;
+}
+
+.aboutButton:hover{
+  transition: 0.5s;
+  background-color:#a990ff ;
+  border: 2px solid #a990ff;
+  box-shadow: 7px 7px 0px 0px #7451eb ;
+
+}
+
+.aboutButton:nth-child(1){
+  margin-left: 20%;
+  margin-right: 5%;
+
+}
+
+/* ============ Projet ============= */
+
+.projet {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  border-bottom: red solid 2px;
+}
+
+.boxProjetLeft,
+.boxProjetRight {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxProjetLeft{
+background-color: indianred;
+}
+
+.boxProjetRight{
+  background-color: hotpink;
+}
+
+
+/* =============================================================== */
 
 
 /* MEDIA QUERY */

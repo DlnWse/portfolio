@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?xml version="1.0" encoding="UTF-8"?>
     <link rel="stylesheet" href="./CSS/pfStyle.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <script defer src="./JS/navbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
         integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
@@ -51,7 +52,7 @@
                         </g>
                         <g clip-path="url(#clip2)" clip-rule="nonzero">
                             <path class="path"
-                                style=" stroke: #7451eb; stroke-width:7 ;fill-rule:evenodd;fill:rgb(45.489502%,31.759644%,92.158508%);fill-opacity:0;"
+                                style=" stroke: #fff; stroke-width:7 ;fill-rule:evenodd;fill:rgb(45.489502%,31.759644%,92.158508%);fill-opacity:0;"
                                 d="M 301.117188 195.765625 
                             C 301.046875 219.394531 293.730469 242.285156 280.171875 261.601562
                             C 267.128906 280.1875 248.15625 294.578125 226.910156 302.40625 
@@ -71,15 +72,13 @@
                     </g>
                 </svg>
             </a>
-
-            <!-- <a href="#" class="nav-logo"><img class="img-nav" src="./Image/DW.svg" alt=""> </a> -->
         </h2>
         <ul class="nav-menu">
             <li class="nav-menu-item">
                 <a href="#about" class="nav-menu-link"><i class="fas fa-home"> </i> A Propos</a>
             </li>
             <li class="nav-menu-item">
-                <a href="#projets" class="nav-menu-link"><i class="fas fa-pencil-ruler"></i> Projets </a>
+                <a href="#projet" class="nav-menu-link"><i class="fas fa-pencil-ruler"></i> Projets </a>
             </li>
             <li class="nav-menu-item">
                 <a href="#skills" class="nav-menu-link"><i class="fas fa-graduation-cap"></i> Skills</a>
@@ -105,13 +104,13 @@
                 <a href="index.html" class="side-nav-link">A propos</a>
             </li>
             <li class="side-nav-item">
+                <a href="#" class="side-nav-link">Projets</a>
+            </li>
+            <li class="side-nav-item">
                 <a href="#" class="side-nav-link">Skills</a>
             </li>
             <li class="side-nav-item">
-                <a href="#" class="side-nav-link">Software</a>
-            </li>
-            <li class="side-nav-item">
-                <a href="#" class="side-nav-link">Projets</a>
+                <a href="#" class="side-nav-link">Contact</a>
             </li>
         </ul>
     </div>
@@ -122,31 +121,45 @@
             <h1 class="prenom">Dylan</h1>
             <h1 class="nom">Weisse</h1>
 
-            <img src="./Image/design/accueilgauche.png" alt="" class="imgTopLeft">
+            <img src="./Image/design/fond_top_left.png" alt="" class="imgTopLeft">
         </div>
         <div class="boxTopRight">
-            <img src="./Image/design/accueildroite.png" alt="" class="imgTopRight">
-
             <p class="concepteur">concepteur developpeur d'application</p>
         </div>
     </section>
-
+    <!-- =============== Section About ===================== -->
     <section class="about" id="about">
-        <div class="boxAboutLeft">
-            <img src="./Image/design/abouttopleft.png" alt="" class="imgAboutTopLeft">
-        </div>
+        <div class="boxAboutLeft"></div>
         <div class="boxAboutRight">
             <h2 class="titleAbout">A Propos
                 <hr>
             </h2>
             <p class="paraAbout">
-                Hey bienvenue dans ma bulle, je m'appelle Dylan j'ai 20 ans et je suis Concepteur et Développeur 
+                Hey bienvenue, je m'appelle Dylan j'ai 20 ans et je suis Concepteur et Développeur
                 d'application et Développeur Web.<br>
                 J'aime me former et apprendre de nouvelles choses. Je suis aussi passionné de nouvelles technologies en
-                tout genre. <br> Si vous souhaitez en apprendre plus je vous laisse me contacter ou consulter mon CV
-                ci-dessous :
+                tout genre. <br><br> Si vous souhaitez en apprendre plus je vous laisse me contacter ou continuer a
+                descendre :
             </p>
+            <div class="aboutButtonBox">
+                <a href="#projet" class="aboutButton outset">En Savoir Plus +</a>
+                <a href="#contact" class="aboutButton inset">Me Contacter</a>
+            </div>
         </div>
+    </section>
+
+    <!-- =============== Section Project ===================== -->
+
+    <section class="projet" id="projet">
+
+        <div class="boxProjetLeft">
+            <!-- <img src="./Image/design/ring.png" alt="" class="imgProjetLeft"> -->
+        </div>
+
+        <div class="boxProjetRight">
+
+        </div>
+
     </section>
 
 </body>
