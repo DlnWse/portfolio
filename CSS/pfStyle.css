@@ -84,7 +84,7 @@ a.nav-menu-link {
 a.nav-menu-link:hover {
   transform: scale(0.9);
   transition: 0.3s;
-  color:whitesmoke;
+  color: whitesmoke;
   border-radius: 10rem;
   font-weight: 900;
 }
@@ -271,7 +271,6 @@ span.hamburger-line {
   /* background-color: red; */
 }
 
-
 .titleAbout {
   text-transform: uppercase;
   color: #7451eb;
@@ -279,12 +278,12 @@ span.hamburger-line {
   margin-top: 20%;
   margin-bottom: 0;
 }
-hr {
+.hrAbout {
   color: #7451eb;
   border: #7451eb solid 3px;
   margin-left: -10px;
 }
-.paraAbout{
+.paraAbout {
   font-size: 25px;
   line-height: 170%;
   text-align: justify;
@@ -292,12 +291,12 @@ hr {
   padding-left: 30px;
 }
 
-.aboutButtonBox{
+.aboutButtonBox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.aboutButton{
+.aboutButton {
   background-color: #7451eb;
   border: 2px solid #7451eb;
   height: 75px;
@@ -310,22 +309,20 @@ hr {
   text-decoration: none;
   padding-top: 2.2%;
   transition: 0.5s;
-  box-shadow: 3px 3px 1px 1px #a990ff ;
+  box-shadow: 3px 3px 1px 1px #a990ff;
   border-radius: 2px;
 }
 
-.aboutButton:hover{
+.aboutButton:hover {
   transition: 0.5s;
-  background-color:#a990ff ;
+  background-color: #a990ff;
   border: 2px solid #a990ff;
-  box-shadow: 7px 7px 0px 0px #7451eb ;
-
+  box-shadow: 7px 7px 0px 0px #7451eb;
 }
 
-.aboutButton:nth-child(1){
+.aboutButton:nth-child(1) {
   margin-left: 20%;
   margin-right: 5%;
-
 }
 
 /* ============ Projet ============= */
@@ -344,17 +341,39 @@ hr {
   flex-direction: column;
 }
 
-.boxProjetLeft{
-background-color: indianred;
+.boxProjetLeft {
+  background-color: indianred;
 }
 
-.boxProjetRight{
+.boxProjetRight {
   background-color: hotpink;
 }
 
+.imgProjetLeft {
+  height: 100%;
+  width: 100%;
+  margin-top: -350px;
+  margin-left: 550px;
+}
+
+
+.titleProjet {
+  text-transform: uppercase;
+  color: #7451eb;
+  font-size: 45px;
+  margin-top: 10%;
+  margin-bottom: 0;
+  margin-left: 50%;
+}
+.hrProjet {
+  color: #7451eb;
+  border: #7451eb solid 3px;
+  margin-right: 10px;
+  width: 90%;
+  margin-left: -1%;
+}
 
 /* =============================================================== */
-
 
 /* MEDIA QUERY */
 
