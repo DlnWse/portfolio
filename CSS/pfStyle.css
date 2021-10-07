@@ -494,6 +494,11 @@ span.hamburger-line {
   width: 90%;
   margin-left: -1%;
 }
+.boxSkillStart, .boxSkillFinish{
+  display: flex;
+  flex-direction: column;
+  
+}
 /* =============================================================== */
 
 /* MEDIA QUERY */
