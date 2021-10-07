@@ -397,7 +397,7 @@ span.hamburger-line {
   margin-right: 5px !important;
 }
 
-/* ==============Test Card================= */
+/* ============== Card================= */
 
 .card {
   width: 800px;
@@ -460,6 +460,40 @@ span.hamburger-line {
 }
 
 
+/* ========================= Skills ======================== */
+
+.skill{
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+}
+
+.boxSkillLeft, .boxSkillRight{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #7fe008;
+}
+
+.titleSkill{
+  text-transform: uppercase;
+  color: #7451eb;
+  font-size: 45px;
+  margin-top: 30%;
+  margin-bottom: 0;
+  margin-left: 58%;
+}
+
+.hrSkill{
+  color: #7451eb;
+  border: #7451eb solid 3px;
+  margin-right: 10px;
+  width: 90%;
+  margin-left: -1%;
+}
 /* =============================================================== */
 
 /* MEDIA QUERY */
