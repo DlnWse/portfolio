@@ -341,7 +341,7 @@ span.hamburger-line {
   width: 100%;
   position: absolute;
   left: 0;
-  display: block;
+  /* display: block; */
 }
 
 .boxProjetLeft,
@@ -371,12 +371,13 @@ span.hamburger-line {
 }
 
 .titleProjet {
-  text-transform: uppercase;
+  font-size: 70px;
+  margin: 0;
+  margin-top: 100px;
+  padding: 0;
   color: #fff;
-  font-size: 45px;
-  margin-top: 30%;
-  margin-bottom: 0;
-  margin-left: 58%;
+  text-align: center;
+  padding-bottom: 50px;
 }
 .hrProjet {
   color: #fff;
@@ -463,42 +464,80 @@ span.hamburger-line {
 /* ========================= Skills ======================== */
 
 .skill{
-  height: 110vh;
+  margin-top: 200px;
+  height: 95vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  /* background-color: red; */
-}
-
-.boxSkillLeft, .boxSkillRight{
-  width: 50vw;
-  height: 100vh;
-  display: flex;
   flex-direction: column;
-  background-color: #7fe008;
+  margin-top: 20%;
+
 }
 
 .titleSkill{
-  text-transform: uppercase;
+  font-size: 70px;
+  margin: 0;
+  padding: 0;
   color: #7451eb;
-  font-size: 45px;
-  margin-top: 30%;
-  margin-bottom: 0;
-  margin-left: 58%;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-.hrSkill{
-  color: #7451eb;
-  border: #7451eb solid 3px;
-  margin-right: 10px;
-  width: 90%;
-  margin-left: -1%;
-}
-.boxSkillStart, .boxSkillFinish{
+.boxSkill{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: rgb(216, 63, 36); */
 }
+
+
+.box{
+  height: 50%;
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  transition: all ease-in 0.5s;
+ margin-bottom: 5%;
+} 
+
+.imgSkill{
+  width: 100%;
+  height: fit-content;
+display: inline-block;
+}
+
+.contentSkill {
+  overflow: hidden;
+  display: relative;
+  height: 60%;
+  margin: 0;
+  transition: 0.4s ease all;
+  border-radius: 5px;
+ border: solid 2px #a990ff;
+ 
+}
+
+.contentSkill:hover {
+  
+  transition: 0.4s ease all;
+  height: 75%;
+  position: relative;
+  margin: 0;
+  display: block;
+  box-shadow: 10px 10px rgba(135, 19, 212, 0.288);
+}
+
+.contentText {
+  color: #7451eb;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  /* vertical-align: bottom; */
+  text-align: center;
+}
+
 /* =============================================================== */
 
 /* MEDIA QUERY */
