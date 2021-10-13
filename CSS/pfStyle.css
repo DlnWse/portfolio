@@ -335,6 +335,7 @@ span.hamburger-line {
   flex-direction: column;
   z-index: 10000;
   background-color: #7451eb;
+  margin-top: 3%;
 }
 
 .fondCurvy {
@@ -540,21 +541,22 @@ display: inline-block;
 
 .contact{
   margin-top: 200px;
-  height: 80vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 20%;
-background-color: #7451eb;
+  background: no-repeat url("../Image/svg/contactWave.svg");
+background-size: cover;
 }
-.titleContact{
+
+
+
+ .titleContact{
   font-size: 70px;
-  margin: 0;
-  padding: 0;
-  color: whitesmoke;
-  text-align: center;
-  padding-bottom: 50px;
-  padding-top: 75px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+ 
 }
 
 .contentBox{
@@ -563,13 +565,114 @@ background-color: #7451eb;
   flex-wrap: wrap;
 }
 
-.boxLeftContact, .boxRightContact{
-  background-color: thistle;
-  width: 45%;
-  height:50vh;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+.boxContactLeft{
+  height: 60%;
+  width: 100px;
+  /* background-color: #a990ff; */
+  margin-top: 11%;
+  margin-left: 5%;
+  margin-right: 25%;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
 
+.boxContactRight{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 60%;
+  width: 40%;
+  /* background-color: #3e08f1; */
+  margin-top: 16%;
+
+}
+
+.contentContact{
+  height: 20%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* background-color: red; */
+  margin-top: 2% ;
+}
+.contentContact:nth-child(4){
+  height: 25%;
+}
+
+.titleContent{
+  font-size: 25px;
+  margin-top: 0;
+  color: #7451eb;
+  
+}
+
+.textContactContent{
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+.contactLink{
+  text-decoration: none;
+  color: #fff;
+  background-color: #7451eb;
+  border-radius: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all ease 0.3s;
+}
+
+.contactLink:hover{
+  background-color: #a990ff;
+  transition: all ease 0.3s;
+}
+
+
+.infobulle {
+  position: relative;  /* les .infobulle deviennent référents */
+  cursor: help;
+  transition: all ease 0.3s;
+  background-color: transparent;
+}
+
+/* on génère un élément :after lors du survol et du focus :*/
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+  transition: all ease 0.3s;
+  content: attr(aria-label);  /* on affiche aria-label */
+  position: absolute;
+  top: -0.3em;
+  left: 170%;
+  border-radius: 50px;
+  padding: 5px;
+  background-color: #7451eb;
+  transform: translateX(-50%); /* on centre horizontalement  */
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: nowrap;  /* on interdit le retour à la ligne */
+}
+
+
+
+.reseaux{
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+}
+
+.linkReseau{
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+}
+.res{
+  font-size: 40px;
+  color: #7451eb;
+  transition: all ease 0.3s;
+}
+
+.res:hover{
+  color: #a990ff;
+  transition: all ease 0.3s;
 }
 
 /* =============================================================== */
