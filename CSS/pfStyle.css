@@ -269,7 +269,6 @@ span.hamburger-line {
   width: 50vw;
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
 }
 
 .titleAbout {
@@ -395,7 +394,7 @@ span.hamburger-line {
   height: 450px !important;
 }
 
-.lslide{
+.lslide {
   margin-right: 5px !important;
 }
 
@@ -460,20 +459,18 @@ span.hamburger-line {
   color: #fff;
 }
 
-
 /* ========================= Skills ======================== */
 
-.skill{
+.skill {
   margin-top: 200px;
   height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 20%;
-
 }
 
-.titleSkill{
+.titleSkill {
   font-size: 70px;
   margin: 0;
   padding: 0;
@@ -483,27 +480,26 @@ span.hamburger-line {
   padding-top: 75px;
 }
 
-.boxSkill{
+.boxSkill {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-
-.box{
+.box {
   height: 50%;
   width: 40%;
   margin-left: 5%;
   margin-right: 5%;
   transition: all ease-in 0.5s;
- margin-bottom: 5%;
-} 
+  margin-bottom: 5%;
+}
 
-.imgSkill{
+.imgSkill {
   width: 100%;
   height: fit-content;
-display: inline-block;
+  display: inline-block;
 }
 
 .contentSkill {
@@ -513,12 +509,10 @@ display: inline-block;
   margin: 0;
   transition: 0.4s ease all;
   border-radius: 5px;
- border: solid 2px #a990ff;
- 
+  border: solid 2px #a990ff;
 }
 
 .contentSkill:hover {
-  
   transition: 0.4s ease all;
   height: 75%;
   position: relative;
@@ -528,7 +522,8 @@ display: inline-block;
 }
 
 .contentText {
-  color: #7451eb;
+  color: #fff;
+  background-color: #a990ff;
   font-size: 25px;
   letter-spacing: 2px;
   padding: 0;
@@ -537,9 +532,11 @@ display: inline-block;
   text-align: center;
 }
 
+
+
 /* ========================= Contact ======================== */
 
-.contact{
+.contact {
   margin-top: 200px;
   height: 110vh;
   width: 100%;
@@ -547,28 +544,25 @@ display: inline-block;
   flex-direction: column;
   margin-top: 20%;
   background: no-repeat url("../Image/svg/contactWave.svg");
-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
 }
 
-
-
- .titleContact{
+.titleContact {
   font-size: 70px;
   writing-mode: vertical-rl;
   text-orientation: upright;
- 
 }
 
-.contentBox{
+.contentBox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.boxContactLeft{
+.boxContactLeft {
   height: 60%;
   width: 100px;
-  /* background-color: #a990ff; */
   margin-top: 11%;
   margin-left: 5%;
   margin-right: 25%;
@@ -576,42 +570,45 @@ background-size: cover;
   color: whitesmoke;
 }
 
-.boxContactRight{
+.boxContactRight {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 60%;
   width: 40%;
-  /* background-color: #3e08f1; */
   margin-top: 16%;
-
 }
 
-.contentContact{
-  height: 20%;
+.boxContactMap{
+  margin-top: 13%;
+  height: 10%;
+  width: 10%;
+  background-color: blue ;
+}
+
+.contentContact {
+
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  /* background-color: red; */
-  margin-top: 2% ;
+  margin-top: 2%;
 }
-.contentContact:nth-child(4){
+.contentContact:nth-child(4) {
   height: 25%;
 }
 
-.titleContent{
+.titleContent {
   font-size: 25px;
   margin-top: 0;
   color: #7451eb;
-  
 }
 
-.textContactContent{
+.textContactContent {
   margin-left: 5%;
   font-size: 20px;
 }
 
-.contactLink{
+.contactLink {
   text-decoration: none;
   color: #fff;
   background-color: #7451eb;
@@ -621,58 +618,76 @@ background-size: cover;
   transition: all ease 0.3s;
 }
 
-.contactLink:hover{
+.contactLink:hover {
   background-color: #a990ff;
   transition: all ease 0.3s;
 }
 
-
 .infobulle {
-  position: relative;  /* les .infobulle deviennent référents */
+  position: relative;
   cursor: help;
   transition: all ease 0.3s;
   background-color: transparent;
 }
 
-/* on génère un élément :after lors du survol et du focus :*/
-
 .infobulle:hover::after,
 .infobulle:focus::after {
   transition: all ease 0.3s;
-  content: attr(aria-label);  /* on affiche aria-label */
+  content: attr(aria-label);
   position: absolute;
   top: -0.3em;
   left: 170%;
   border-radius: 50px;
   padding: 5px;
   background-color: #7451eb;
-  transform: translateX(-50%); /* on centre horizontalement  */
-  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
-  white-space: nowrap;  /* on interdit le retour à la ligne */
+  transform: translateX(-50%);
+  z-index: 1;
+  white-space: nowrap;
 }
 
-
-
-.reseaux{
+.reseaux {
   display: flex;
   flex-direction: row;
   margin-left: 3%;
 }
 
-.linkReseau{
+.linkReseau {
   padding-right: 30px;
   padding-left: 30px;
   text-align: center;
 }
-.res{
+.res {
   font-size: 40px;
   color: #7451eb;
   transition: all ease 0.3s;
 }
 
-.res:hover{
+.res:hover {
   color: #a990ff;
   transition: all ease 0.3s;
+}
+
+/* ==MAP== */
+
+iframe{
+  border-radius: 10px;
+  margin-left: -200px;
+}
+
+/* ========================= Footer ======================== */
+
+footer {
+  height: 75px;
+}
+
+.footer {
+  padding-top: 1%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fa-heart {
+  color: red;
 }
 
 /* =============================================================== */
