@@ -213,10 +213,9 @@ span.hamburger-line {
 
 .boxTopLeft,
 .boxTopRight {
-  width: 50vw;
+  width: 49.5vw;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .prenom {
   color: #fff;
@@ -243,6 +242,7 @@ span.hamburger-line {
 
 .concepteur {
   text-transform: uppercase;
+  text-align: left;
   color: white;
   letter-spacing: 10px;
   font-size: 30px;
