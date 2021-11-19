@@ -15,6 +15,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: whitesmoke;
+  transition: all 1s;
 }
 
 * {
@@ -875,9 +876,12 @@ footer {
 
 @media (max-width: 908px){
 
-
   .about, .projet, .skill, .contact, .footer, .fondCurvy {
     visibility: hidden;
+  }
+
+  .top{
+    background: url(../Image/svg/presentation.svg);
   }
 
   .boxTopLeft,
