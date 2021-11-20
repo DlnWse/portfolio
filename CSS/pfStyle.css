@@ -275,6 +275,7 @@ span.hamburger-line {
   font-size: 45px;
   margin-top: 20%;
   margin-bottom: 0;
+  font-family: "Spartan", sans-serif;
 }
 .hrAbout {
   color: #7451eb;
@@ -874,23 +875,26 @@ footer {
   }
 }
 
-@media (max-width: 908px){
-
-  .about, .projet, .skill, .contact, .footer, .fondCurvy {
+@media (max-width: 908px) {
+  .projet,
+  .skill,
+  .contact,
+  .footer,
+  .fondCurvy {
     visibility: hidden;
   }
 
-  .top{
+  .top {
     background: url(../Image/svg/presentation.svg);
   }
 
   .boxTopLeft,
-.boxTopRight {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
+  .boxTopRight {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
   .prenom {
     font-size: 75px;
@@ -922,4 +926,78 @@ footer {
     text-align: right;
   }
 
+  /* MEET */
+
+  .about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background: url("../Image/svg/about.svg");
+  }
+
+  .titleAbout {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 35px;
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: "Spartan", sans-serif;
+  }
+
+  .boxAboutLeft,
+  .boxAboutRight {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .hrAbout {
+    visibility: hidden;
+  }
+  .paraAbout {
+    font-size: 24px;
+    line-height: 110%;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 15%;
+  }
+
+  .aboutButtonBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15%;
+  }
+
+  .aboutButton {
+    background-color: #fff;
+    border: 2px solid #fff;
+    height: 40px;
+    width: 130px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7451eb;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 2.2%;
+    transition: 0.5s;
+    box-shadow: 3px 3px 1px 1px #e0e0e0;
+    border-radius: 2px;
+  }
+  
+  .aboutButton:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 7px 7px 0px 0px #e0e0e0;
+  }
+  
+  .aboutButton:nth-child(1) {
+    margin-left: 12%;
+    margin-right: 5%;
+  }
 }
