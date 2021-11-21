@@ -32,14 +32,25 @@
         $(document).ready(function () {
 
             $("#lightSlider").lightSlider({
-                item: 2 ,
+                item: 2,
                 margin: 2,
                 control: true,
                 currentPagerPosition: 'middle',
                 control: true,
                 enableTouch: true,
                 enableDrag: true,
-
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        item: 1,
+                        margin: 2,
+                        control: true,
+                        currentPagerPosition: 'middle',
+                        control: true,
+                        enableTouch: true,
+                        enableDrag: true,
+                    }
+                }]
 
             });
 
@@ -317,7 +328,7 @@
 
     </section>
 
-   
+
 
     <section id="contact" class="contact">
 
@@ -327,7 +338,7 @@
             </div>
 
             <div class="boxContactRight">
-                
+
                 <div class="contentContact">
                     <h3 class="titleContent"> <i class="fas fa-map-marker-alt"></i> Localisation</h3>
                     <p class="textContactContent">Nancy</p>
@@ -335,32 +346,41 @@
 
                 <div class="contentContact">
                     <h3 class="titleContent"> <i class="fas fa-envelope"></i> E-mail</h3>
-                    <p class="textContactContent"><a class="contactLink" rel="stylesheet" href="mailto:contact@dylanweisse.com"><span class="infobulle" aria-label="Cliquez sur moi !">contact@dylanweisse.com </a></span></p>
+                    <p class="textContactContent"><a class="contactLink" rel="stylesheet"
+                            href="mailto:contact@dylanweisse.com"><span class="infobulle"
+                                aria-label="Cliquez sur moi !">contact@dylanweisse.com </a></span></p>
                 </div>
                 <div class="contentContact">
                     <h3 class="titleContent"> <i class="fas fa-mobile-alt"></i> Numéro</h3>
-                    <p class="textContactContent"><a class="contactLink" rel="stylesheet" href="tel:0682314660"><span class="infobulle" aria-label="Cliquez sur moi !">06 82 31 46 60 </a></span></p>
+                    <p class="textContactContent"><a class="contactLink" rel="stylesheet" href="tel:0682314660"><span
+                                class="infobulle" aria-label="Cliquez sur moi !">06 82 31 46 60 </a></span></p>
                 </div>
                 <div class="contentContact">
                     <h3 class="titleContent"> <i class="fas fa-plus"></i> Reseaux Sociaux</h3>
                     <div class="reseaux">
-                        <a class="linkReseau" href="https://open.spotify.com/user/striipcoca?si=cfNeAOY5S7uXGjd_WrJilg"><i class="res fab fa-spotify"></i></a>
-                        <a class="linkReseau" href="https://twitter.com/dylan_weisse"><i class="res fab fa-twitter"></i></a>
+                        <a class="linkReseau"
+                            href="https://open.spotify.com/user/striipcoca?si=cfNeAOY5S7uXGjd_WrJilg"><i
+                                class="res fab fa-spotify"></i></a>
+                        <a class="linkReseau" href="https://twitter.com/dylan_weisse"><i
+                                class="res fab fa-twitter"></i></a>
                         <a class="linkReseau" href="https://github.com/DlnWse/"><i class="res fab fa-github"></i></a>
-                        <a class="linkReseau" href="https://www.linkedin.com/in/dlnwse/ "><i class="res fab fa-linkedin"></i></a>
+                        <a class="linkReseau" href="https://www.linkedin.com/in/dlnwse/ "><i
+                                class="res fab fa-linkedin"></i></a>
 
                     </div>
                 </div>
 
                 <div class="boxContactMap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21071.28039433109!2d6.155929336815681!3d48.                  68808440441112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.               1!3m3!1m2!1s0x4794986e17a692cd%3A0x4ed671b10d82498d!2sNancy!5e0!3m2!1sfr!2sfr!4v1634166381616!5m2!1sfr!2sfr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21071.28039433109!2d6.155929336815681!3d48.                  68808440441112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.               1!3m3!1m2!1s0x4794986e17a692cd%3A0x4ed671b10d82498d!2sNancy!5e0!3m2!1sfr!2sfr!4v1634166381616!5m2!1sfr!2sfr"
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-          
 
-        </div>        
+
+        </div>
     </section>
-   
+
     <footer>
 
         <p class="footer">Fait avec <i class="fas fa-heart"></i> par Dylan Weisse</p>
