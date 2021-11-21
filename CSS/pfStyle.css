@@ -1128,7 +1128,7 @@ footer {
     letter-spacing: 5px;
     color: #fff;
     font-size: 35px;
-    margin-top: -15%;
+    margin-top: -20%;
     text-align: center;
     margin-bottom: 0;
     font-family: "Spartan", sans-serif;
@@ -1139,7 +1139,7 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-top: 15%;
+    margin-top: 20%;
   }
 
   .box {
@@ -1160,7 +1160,7 @@ footer {
   .contentSkill {
     
     display: relative;
-    height: 90%;
+    height: 85%;
     margin: 0;
     transition: 0.4s ease all;
     border-radius: 5px;
@@ -1169,7 +1169,7 @@ footer {
 
   .contentSkill:hover {
     transition: 0.4s ease all;
-    height: 90%;
+    height: 85%;
     position: relative;
     margin: 0;
     display: block;
