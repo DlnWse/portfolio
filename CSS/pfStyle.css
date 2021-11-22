@@ -1411,7 +1411,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 15%;
+    margin-top: 25%;
   }
 
   .aboutButton {
@@ -1439,7 +1439,7 @@ footer {
   }
 
   .aboutButton:nth-child(1) {
-    margin-left: 12%;
+    margin-left: 7%;
     margin-right: 5%;
   }
 
@@ -1478,7 +1478,7 @@ footer {
     letter-spacing: 5px;
     color: #fff;
     font-size: 35px;
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: center;
     margin-bottom: 0;
     font-family: "Spartan", sans-serif;
@@ -1561,7 +1561,7 @@ footer {
 
   .skill {
     background: url("../Image/svg/skill.svg");
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1588,7 +1588,7 @@ footer {
   }
 
   .box {
-    height: 15%;
+    height: 14%;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -1639,7 +1639,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 0%;
+    margin-top: %;
     background: no-repeat url("../Image/svg/contact.svg");
     background-size: cover;
     overflow: hidden;
@@ -1677,7 +1677,7 @@ footer {
     flex-wrap: wrap;
     height: 60%;
     width: 60%;
-    margin-top: 35%;
+    margin-top: 40%;
   }
 
   .boxContactMap {
@@ -1695,7 +1695,7 @@ footer {
     margin-top: 2%;
   }
   .contentContact:nth-child(1) {
-    margin-left: 15%;
+    margin-left: 5%;
   }
 
   .contentContact:nth-child(2) {
@@ -1705,12 +1705,12 @@ footer {
     margin-left: -20%;
   }
   .contentContact:nth-child(4) {
-    margin-left: -5%;
+    margin-left: -15%;
     height: 25%;
   }
 
   .titleContent {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 0;
     color: #7451eb;
   }
