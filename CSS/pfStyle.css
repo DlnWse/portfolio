@@ -1639,7 +1639,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: %;
+    margin-top: -5%;
     background: no-repeat url("../Image/svg/contact.svg");
     background-size: cover;
     overflow: hidden;
