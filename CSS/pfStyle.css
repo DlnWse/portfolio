@@ -5,6 +5,7 @@
 /* font-family: 'Roboto Condensed', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Spartan&display=swap");
 /* font-family: 'Spartan', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 /* ============================================================================ */
 
 html,
@@ -14,7 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: whitesmoke;
+  background-color: white;
   transition: all 1s;
 }
 
@@ -316,7 +317,7 @@ span.hamburger-line {
   transition: 0.5s;
   background-color: #a990ff;
   border: 2px solid #a990ff;
-  box-shadow: 7px 7px 0px 0px #7451eb;
+  box-shadow: 7px 7px 0px 0px rgb(116, 81, 235);
 }
 
 .aboutButton:nth-child(1) {
@@ -327,7 +328,7 @@ span.hamburger-line {
 /* ============ Projet ============= */
 
 .projet {
-  height: 110vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -336,6 +337,7 @@ span.hamburger-line {
   margin-top: 3%;
 }
 
+
 .fondCurvy {
   width: 100%;
   position: absolute;
@@ -343,122 +345,113 @@ span.hamburger-line {
   /* display: block; */
 }
 
-.boxProjetBottom {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin-top: 3%;
-  margin-left: 3%;
-}
-
-.imgProjetLeft {
-  margin-top: -80px;
-  margin-left: 380px;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  position: unset;
-}
-
 .titleProjet {
   font-size: 70px;
   margin: 0;
-  margin-top: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 0;
-  color: whitesmoke;
+  color: #fff;
+  z-index: 20;
   text-align: center;
   padding-bottom: 0;
 }
-.hrProjet {
+.projetButton{
+  font-family: 'Shadows Into Light', cursive;
+  z-index: 20;
+  text-decoration: none;
   color: #fff;
-  border: #fff solid 3px;
-  margin-right: 10px;
-  width: 90%;
-  margin-left: -1%;
+  font-size: 60px;
+  text-align: center;
+  height: 100px;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.projetButton:hover{
+  background-color: #fff;
+  color: #7451eb;
+  transition: 0.3s;
 }
 
-#lightSlider {
-  z-index: 10000;
-  margin-top: 3%;
-  padding-top: 20px;
-  height: 450px !important;
+@keyframes move_wave {
+  0% {
+      transform: translateX(0) translateZ(0) scaleY(1)
+  }
+  50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+  }
+  100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1)
+  }
 }
-
-.lslide {
-  margin-right: 5px !important;
-}
-
-/* ============== Card================= */
-
-.card {
-  width: 800px;
-  height: 390px;
-  position: relative;
-  border-radius: 20px;
-  cursor: pointer;
-  margin-left: 2%;
-
-  transition: 0.5s;
-}
-.card:hover {
-  transition: 0.5s;
-  box-shadow: 10px 10px #0000004d;
-}
-
-.card img {
-  position: absolute;
-  width: 100%;
-  border-radius: 10px;
-}
-
-.content {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 75px;
-  padding: 0.4em 1.5em;
-  font-size: 25px;
-  background: transparent;
-  color: white;
-  transform: scale(0.99999);
-  border-top: 1px solid rgba(255, 255, 255, 0.164);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+.waveWrapper {
   overflow: hidden;
-  transition: all 0.4s;
-  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: -140px;
 }
-.content p {
-  font-size: 0.7em;
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background-image: linear-gradient(to top, #7451eb 20%, #7451eb 70%);
 }
-.card:hover .content {
-  height: 250px;
-  backdrop-filter: blur(5px);
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
 }
-.cardTitle {
-  padding: 0;
-  margin: 0;
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
 }
-.imageBox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.bgBottom {
+  z-index: 5;
 }
-.fab {
-  font-size: 65px;
-  color: #fff;
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
 }
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+animation: move-wave 1s;
+ -webkit-animation: move-wave 1s;
+ -webkit-animation-delay: 1s;
+ animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+
+
 
 /* ========================= Skills ======================== */
 
 .skill {
-  margin-top: 200px;
   height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 20%;
 }
 
 .titleSkill {

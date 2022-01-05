@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
+
 
     <!-- ====================== SCRIPT ============================= -->
 
@@ -24,44 +23,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <link type="text/css" rel="stylesheet" href="./CSS/lightslider.css" />
-    <script src="ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./JS/lightslider.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            $("#lightSlider").lightSlider({
-                item: 2,
-                margin: 2,
-                control: true,
-                currentPagerPosition: 'middle',
-                control: true,
-                enableTouch: true,
-                enableDrag: true,
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        item: 1,
-                        margin: 2,
-                        control: true,
-                        currentPagerPosition: 'middle',
-                        control: true,
-                        enableTouch: true,
-                        enableDrag: true,
-                    }
-                }]
-
-            });
-
-        });
-    </script>
-
 </head>
 
 <!-- ====================== Body ============================= -->
 
-<body>
+<body">
     <div class="nav">
         <h2 class="nav-brand">
             <a href="#">
@@ -194,100 +160,27 @@
     </section>
 
     <!-- =============== Section Project ===================== -->
-    <img src="./Image/svg/wave.svg" class="fondCurvy">
-
+    
     <section id="projet" class="projet">
         <h2 class="titleProjet">Projets</h2>
-        <div class="boxProjetBottom">
-            <ul id="lightSlider">
-                <li>
-                    <a href="#">
-                        <div class="card">
-                            <img src="./Image/picsProject/porfolio.PNG" alt="">
-                            <div class="content">
-                                <h2 class="cardTitle">Portfolio</h2>
-                                <p>Vous etes ici ! Le site a été programmer en HTML, CSS, Javascript.</p>
-                                <div class="imageBox">
-                                    <i class="fab fa-html5"></i>
-                                    <i class="fab fa-css3-alt"></i>
-                                    <i class="fab fa-js-square"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.vdtformation.com">
-                        <div class="card">
-                            <img src="./Image/picsProject/vdt.PNG" alt="">
-                            <div class="content">
-                                <h2 class="cardTitle">Site VDT Formation</h2>
-                                <p>Site de présentation d'une entreprise de formation, le site a été programmer en PHP,
-                                    HTML, CSS et Javascript. J'ai aussi appeler une API "Anotea" fait par pole emploi.
-                                </p>
-                                <div class="imageBox">
-                                    <i class="fab fa-html5"></i>
-                                    <i class="fab fa-css3-alt"></i>
-                                    <i class="fab fa-js-square"></i>
-                                    <i class="fab fa-php"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://github.com/DlnWse/SpaceInvaders">
-                        <div class="card">
-                            <img src="./Image/picsProject/spaceinvader.png" alt="">
-                            <div class="content">
-                                <h2 class="cardTitle">Space Invader &#128126;</h2>
-                                <p>Un jeu retro ! Le seul, l'unique, Space Invader. <br> JavaFX, CSS et utilisation de
-                                    SceneBuilder</p>
-                                <div class="imageBox">
-                                    <i class="fab fa-java"></i>
-                                    <i class="fab fa-css3-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://github.com/DlnWse/PACMAN">
-                        <div class="card">
-                            <img src="./Image/picsProject/pacman.png" alt="">
-                            <div class="content">
-                                <h2 class="cardTitle">Pacman</h2>
-                                <p>Il dévorre tout sur son passage ! Mais c'est Pacman !<br> Javascript natif et CSS</p>
-                                <div class="imageBox">
-                                    <i class="fab fa-js-square"></i>
-                                    <i class="fab fa-css3-alt"></i>
-                                    <i class="fab fa-html5"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://www.github.com/dlnwse">
-                        <div class="card">
-                            <img src="./Image/picsProject/github.png" alt="">
-                            <div class="content">
-                                <h2 class="cardTitle">En voir plus !</h2>
-                                <p>Vous avez vu quelques projets, il y en a des tas d'autre sur mon github, il suffit de
-                                    cliquer sur moi !</p>
-                                <div class="imageBox">
-                                    <i class="fab fa-github"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-
+        <a href="./pages/projet.html" class="projetButton">Mes Projets →</a>
+        
+        <div class="waveWrapper waveAnimation">
+            <div class="waveWrapperInner bgTop">
+              <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+              <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+              <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+            </div>
+          </div>
+        
+       
     </section>
-    <img src="./Image/svg/wave2.svg" class="fondCurvy">
+
+    <!-- =============== Section Skills ===================== -->
 
     <section id="skills" class="skill">
 
@@ -316,19 +209,14 @@
             </div>
             <div class="box">
                 <div class="contentSkill">
-                    <img class="imgSkill" src="/Image/picsSkills/environnement.png" alt="">
+                    <img class="imgSkill" src="./Image/picsSkills/environnement.png" alt="">
                     <p class="contentText">IntelliJ, Android Studio, Git (Bitbucket…) & Méthode agile</p>
                 </div>
             </div>
 
         </div>
 
-
-
-
     </section>
-
-
 
     <section id="contact" class="contact">
 
@@ -351,7 +239,8 @@
                 </div>
                 <div class="contentContact">
                     <h3 class="titleContent"> <i class="fas fa-mobile-alt"></i> Numéro</h3>
-                    <p class="textContactContent"><a class="contactLink" rel="stylesheet" href="tel:0682314660">06 82 31 46 60 </a></span></p>
+                    <p class="textContactContent"><a class="contactLink" rel="stylesheet" href="tel:0682314660">06 82 31
+                            46 60 </a></span></p>
                 </div>
                 <div class="contentContact">
                     <h3 class="titleContent"> <i class="fas fa-plus"></i> Reseaux Sociaux</h3>
