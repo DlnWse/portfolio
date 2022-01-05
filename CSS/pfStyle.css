@@ -337,13 +337,6 @@ span.hamburger-line {
   margin-top: 3%;
 }
 
-.fondCurvy {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  /* display: block; */
-}
-
 .titleProjet {
   font-size: 70px;
   margin: 0;
@@ -465,7 +458,6 @@ span.hamburger-line {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
 }
 
 .flip-card {
@@ -579,7 +571,6 @@ li.liskill {
   margin-top: 13%;
   height: 10%;
   width: 8%;
-  background-color: blue;
 }
 
 .contentContact {
@@ -900,18 +891,12 @@ footer {
     padding-top: 60%;
     text-align: right;
   }
-
-
-
-
 }
 
 @media (max-width: 375px) {
-  
 }
 
 @media (max-width: 320px) {
-
 }
 
 /* ================================================== */
@@ -924,48 +909,113 @@ footer {
 }
 
 @media (max-width: 1024px) {
-
 }
 
 /* ================================================== */
 /* =============RESPONSIVE PC======================== */
 /* ================================================== */
 
-@media screen and (max-width: 1280px) and (max-height: 720px) {
+@media screen and (max-width: 1280px) {
 }
 
-@media screen and (max-width: 1366px) and (max-height: 768px) {
+@media screen and (max-width: 1366px) {
+  .titleAbout {
+    font-size: 45px;
+    margin-top: 10%;
+  }
+  .paraAbout {
+    font-size: 22px;
+    line-height: 150%;
+  }
+  .titleProjet {
+    font-size: 55px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  .projetButton {
+    font-size: 45px;
+  }
+  .titleSkill {
+    font-size: 55px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .flex-card-box {
+    margin-left: 0 !important;
+  }
+
+  .flip-card {
+    width: 200px;
+    height: 50px;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+  }
+
+  li.liskill {
+    font-size: 15px;
+  }
+
+  .boxContactLeft {
+    height: 60%;
+    width: 70px;
+    margin-top: 11%;
+    margin-left: 5%;
+    margin-right: 24%;
+    text-transform: uppercase;
+    color: whitesmoke;
+  }
+  .boxContactRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50% !important;
+    width: 35% !important;
+    margin-top: 16%;
+  }
+  .contentBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .boxContactMap {
+    margin-top: 13%;
+    height: 10%;
+    width: 6%;
+  }
+  iframe {
+  margin-left: 0px;
+}
 }
 
-@media screen and (max-width: 1600px) and (max-height: 900px) {
+@media screen and (max-width: 1600px) {
+  /* ========================= Skills ======================== */
 
+  .flex-card-box {
+    margin-left: 5%;
+  }
 
-/* ========================= Skills ======================== */
+  .flip-card {
+    width: 600px;
+    height: 150px;
+  }
 
-.flex-card-box {
-  margin-left: 5%;
-}
+  li.liskill {
+    font-size: 20px;
+  }
 
-.flip-card {
-  width: 600px;
-  height: 150px;
-}
+  /* =================================================== */
 
-li.liskill {
-  font-size: 20px;
-}
-
-/* =================================================== */
-
-.boxContactRight {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 60%;
-  width: 40%;
-  margin-top: 18%;
-}
-
+  .boxContactRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 40%;
+    margin-top: 18%;
+  }
 }
 
 /* Base en 1920x 1080 */
