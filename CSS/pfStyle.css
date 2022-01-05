@@ -5,7 +5,7 @@
 /* font-family: 'Roboto Condensed', sans-serif; */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Spartan&display=swap");
 /* font-family: 'Spartan', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 /* ============================================================================ */
 
 html,
@@ -337,7 +337,6 @@ span.hamburger-line {
   margin-top: 3%;
 }
 
-
 .fondCurvy {
   width: 100%;
   position: absolute;
@@ -356,8 +355,8 @@ span.hamburger-line {
   text-align: center;
   padding-bottom: 0;
 }
-.projetButton{
-  font-family: 'Shadows Into Light', cursive;
+.projetButton {
+  font-family: "Shadows Into Light", cursive;
   z-index: 20;
   text-decoration: none;
   color: #fff;
@@ -370,7 +369,7 @@ span.hamburger-line {
   border-radius: 50px;
   transition: 0.3s;
 }
-.projetButton:hover{
+.projetButton:hover {
   background-color: #fff;
   color: #7451eb;
   transition: 0.3s;
@@ -378,13 +377,13 @@ span.hamburger-line {
 
 @keyframes move_wave {
   0% {
-      transform: translateX(0) translateZ(0) scaleY(1)
+    transform: translateX(0) translateZ(0) scaleY(1);
   }
   50% {
-      transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
   }
   100% {
-      transform: translateX(-50%) translateZ(0) scaleY(1)
+    transform: translateX(-50%) translateZ(0) scaleY(1);
   }
 }
 .waveWrapper {
@@ -425,10 +424,10 @@ span.hamburger-line {
   background-size: 50% 100px;
 }
 .waveAnimation .waveTop {
-animation: move-wave 1s;
- -webkit-animation: move-wave 1s;
- -webkit-animation-delay: 1s;
- animation-delay: 1s;
+  animation: move-wave 1s;
+  -webkit-animation: move-wave 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .waveMiddle {
   background-size: 50% 120px;
@@ -443,12 +442,10 @@ animation: move-wave 1s;
   animation: move_wave 15s linear infinite;
 }
 
-
-
 /* ========================= Skills ======================== */
 
 .skill {
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -460,60 +457,76 @@ animation: move-wave 1s;
   padding: 0;
   color: #7451eb;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   padding-top: 75px;
 }
 
-.boxSkill {
-  width: 100%;
+.flex-card-box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.box {
-  height: 50%;
-  width: 40%;
-  margin-left: 5%;
-  margin-right: 5%;
-  transition: all ease-in 0.5s;
-  margin-bottom: 5%;
+.flip-card {
+  background-color: transparent;
+  width: 800px;
+  height: 200px;
+  perspective: 1000px;
+  margin-left: 4%;
+  margin-right: 3%;
+  margin-bottom: 3%;
 }
-
-.imgSkill {
+img {
   width: 100%;
-  height: fit-content;
-  display: inline-block;
+  height: 100%;
 }
-
-.contentSkill {
-  overflow: hidden;
-  display: relative;
-  height: 60%;
-  margin: 0;
-  transition: 0.4s ease all;
-  border-radius: 5px;
-  border: solid 2px #a990ff;
-}
-
-.contentSkill:hover {
-  transition: 0.4s ease all;
-  height: 75%;
+/* This container is needed to position the front and back side */
+.flip-card-inner {
   position: relative;
-  margin: 0;
-  display: block;
-  box-shadow: 10px 10px rgba(135, 19, 212, 0.288);
-}
-
-.contentText {
-  color: #fff;
-  background-color: #a990ff;
-  font-size: 25px;
-  letter-spacing: 2px;
-  padding: 0;
-  margin: 0;
+  width: 100%;
   height: 100%;
   text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: no-repeat #25282f url("../Image/picsSkills/codeFond.jpg");
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: row;
+}
+ul.ulskill {
+  height: 100%;
+  width: 47%;
+}
+li.liskill {
+  list-style: none;
+  font-size: 33px;
+  line-height: 160%;
+  background-color: #00000079;
 }
 
 /* ========================= Contact ======================== */
@@ -1296,21 +1309,21 @@ footer {
 
   /* ========================= Footer ======================== */
 
-footer {
-  height: 50px;
-  background-color: #fff;
-}
+  footer {
+    height: 50px;
+    background-color: #fff;
+  }
 
-.footer {
-  padding-top: 1%;
-  font-size: 20px;
-  text-align: center;
-  margin: 0;
-}
+  .footer {
+    padding-top: 1%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+  }
 
-.fa-heart {
-  color: red;
-}
+  .fa-heart {
+    color: red;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1320,7 +1333,6 @@ footer {
 
   .top {
     background: left url(../Image/svg/presentation.svg);
-
   }
 
   .boxTopLeft,
@@ -1765,21 +1777,21 @@ footer {
 
   /* ========================= Footer ======================== */
 
-footer {
-  height: 50px;
-  background-color: #fff;
-}
+  footer {
+    height: 50px;
+    background-color: #fff;
+  }
 
-.footer {
-  padding-top: 1%;
-  font-size: 20px;
-  text-align: center;
-  margin: 0;
-}
+  .footer {
+    padding-top: 1%;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+  }
 
-.fa-heart {
-  color: red;
-}
+  .fa-heart {
+    color: red;
+  }
 }
 
 @media (max-width: 320px) {
