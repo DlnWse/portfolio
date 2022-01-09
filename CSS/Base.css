@@ -86,7 +86,7 @@ a.nav-menu-link {
 a.nav-menu-link:hover {
   transform: scale(0.9);
   transition: 0.3s;
-  color: whitesmoke;
+  color: #fff;
   border-radius: 10rem;
   font-weight: 900;
 }
@@ -414,7 +414,7 @@ span.hamburger-line {
   transform-origin: center bottom;
 }
 .waveTop {
-  background-size: 50% 100px;
+  background-size: 50% 70px;
 }
 .waveAnimation .waveTop {
   animation: move-wave 1s;
@@ -423,13 +423,13 @@ span.hamburger-line {
   animation-delay: 1s;
 }
 .waveMiddle {
-  background-size: 50% 120px;
+  background-size: 50% 80px;
 }
 .waveAnimation .waveMiddle {
   animation: move_wave 10s linear infinite;
 }
 .waveBottom {
-  background-size: 50% 100px;
+  background-size: 50% 70px;
 }
 .waveAnimation .waveBottom {
   animation: move_wave 15s linear infinite;
@@ -673,7 +673,7 @@ footer {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    background-color: #e9f1df;
+    background-color: #fff;
   }
 
   /* ======================NAV============================================================== */
@@ -850,7 +850,11 @@ footer {
 /* =============RESPONSIVE SMARTPHONE================ */
 /* ================================================== */
 
-@media (max-width: 414px) {
+@media only screen and (max-width: 414px) {
+  html,
+  body {
+    background-color: white;
+  }
   .top {
     background: url(../Image/svg/presentation.svg);
   }
@@ -891,34 +895,187 @@ footer {
     padding-top: 60%;
     text-align: right;
   }
+
+  .boxAboutLeft {
+    display: none;
+  }
+  .boxAboutRight {
+    width: 100%;
+  }
+  .titleAbout {
+    text-align: center;
+    margin: 0;
+    margin-top: 5%;
+  }
+  hr.hrAbout {
+    display: none;
+  }
+  .paraAbout {
+    font-size: 20px;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .aboutButton {
+    height: 45px;
+    width: 150px;
+    margin: 0;
+  }
+  .aboutButton:nth-child(1) {
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+
+  .titleProjet {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  .projetButton {
+    font-size: 30px;
+    height: 70px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skill {
+    height: 70vh;
+  }
+
+  .titleSkill {
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+
+  .flex-card-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .flip-card {
+    width: 100%;
+    height: 110px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 3%;
+  }
+
+  ul.ulskill {
+    height: 100%;
+    width: 47%;
+  }
+  li.liskill {
+    list-style: none;
+    font-size: 15px;
+    line-height: 160%;
+    background-color: #00000079;
+  }
+
+  .contact {
+    height: 110vh;
+    margin-top: 30px;
+    background: no-repeat url("../Image/svg/contact.svg");
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .titleContact {
+    font-size: 60px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: 0;
+  }
+  .boxContactMap {
+    display: none;
+  }
+  .titleContact {
+    margin-top: 100px;
+    margin-left: -20px;
+  }
+  .boxContactLeft {
+    height: 60%;
+    width: 10%;
+    margin-top: 11%;
+    margin-left: 5%;
+    margin-right: 25%;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .boxContactRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 90%;
+    margin-top: 60%;
+    margin-left: -50px;
+  }
+  .contentBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .res {
+    font-size: 30px;
+    color: #7451eb;
+    transition: all ease 0.3s;
+  }
+  .linkReseau {
+    padding-right: 10px;
+    padding-left: 15px;
+    text-align: center;
+  }
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
+  .boxAboutLeft {
+    display: none;
+  }
+  .boxAboutRight {
+    width: 100%;
+  }
 }
 
 @media (max-width: 320px) {
-}
-
-/* ================================================== */
-/* =============RESPONSIVE TABLETTE================== */
-/* ================================================== */
-
-@media screen and (min-device-width: 480px) and (max-device-width: 600px) {
-}
-@media screen and (min-device-width: 720px) and (max-device-width: 860px) {
-}
-
-@media (max-width: 1024px) {
-}
+  .boxAboutLeft {
+    display: none;
+  }
+  .boxAboutRight {
+    width: 100%;
+  }
+} */
 
 /* ================================================== */
 /* =============RESPONSIVE PC======================== */
 /* ================================================== */
+/* 
+@media only screen and (max-width: 1280px) and (max-height: 720px) {
+  .flex-card-box {
+    margin-left: 8% !important;
+  }
 
-@media screen and (max-width: 1280px) {
+  .flip-card {
+    width: 500px !important;
+    height: 125px !important;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+  }
+
+  li.liskill {
+    font-size: 15px;
+  }
+
+  .titleContent {
+    font-size: 20px;
+  }
+  .paraAbout {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width: 1366px) {
+@media only screen and (max-width: 1366px) and (max-height: 768px) {
   .titleAbout {
     font-size: 45px;
     margin-top: 10%;
@@ -942,7 +1099,7 @@ footer {
   }
 
   .flex-card-box {
-    margin-left: 0 !important;
+    margin-left: 0% !important;
   }
 
   .flip-card {
@@ -986,12 +1143,11 @@ footer {
     width: 6%;
   }
   iframe {
-  margin-left: 0px;
-}
+    margin-left: 0px;
+  }
 }
 
-@media screen and (max-width: 1600px) {
-  /* ========================= Skills ======================== */
+@media only screen and (max-width: 1600px) and (max-height: 900px) {
 
   .flex-card-box {
     margin-left: 5%;
@@ -1006,21 +1162,36 @@ footer {
     font-size: 20px;
   }
 
-  /* =================================================== */
-
   .boxContactRight {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 60%;
-    width: 40%;
+    width: 30%;
     margin-top: 18%;
   }
-}
+} */
 
 /* Base en 1920x 1080 */
 
-@media screen and (max-width: 2560px) and (max-height: 1080px) {
+@media only screen and (max-width: 2560px) and (max-height: 1080px) {
+  /* TODO Responsive 2K */
 }
-@media screen and (max-width: 3840px) and (max-height: 2160px) {
+@media only screen and (max-width: 3840px) and (max-height: 2160px) {
+  /* TODO Responsive 4K */
+}
+
+/* ================================================== */
+/* =============RESPONSIVE TABLETTE================== */
+/* ================================================== */
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 600px) {
+  /* TODO Responsive petite tablette */
+}
+@media only screen and (min-device-width: 720px) and (max-device-width: 860px) {
+  /* TODO Responsive moyenne tablette */
+}
+
+@media only screen and (max-width: 1024px) {
+  /* TODO Responsive grande tablette */
 }
