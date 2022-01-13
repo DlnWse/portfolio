@@ -11,13 +11,13 @@
     <!-- ====================== LINK ============================= -->
 
     <link rel="stylesheet" href="./CSS/Base.css">
-    <link rel="stylesheet" href="./CSS/responsive-mobile.css>
-    <link rel="stylesheet" href="./CSS/responsive-pc.css>
 
     <link rel="shortcut icon" href="./Image/svg/DW.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
 
     <!-- ====================== SCRIPT ============================= -->
@@ -25,7 +25,7 @@
     <script defer src="./JS/navbar.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <!-- ====================== Body ============================= -->
@@ -87,16 +87,16 @@
             </a>
         </h2>
         <ul class="nav-menu">
-            <li class="nav-menu-item">
+            <li data-aos="fade-down-left" class="nav-menu-item">
                 <a href="#about" class="nav-menu-link"><i class="fas fa-home"> </i> A Propos</a>
             </li>
-            <li class="nav-menu-item">
+            <li data-aos="fade-down-left" class="nav-menu-item">
                 <a href="#projet" class="nav-menu-link"><i class="fas fa-pencil-ruler"></i> Projets </a>
             </li>
-            <li class="nav-menu-item">
+            <li data-aos="fade-down-left" class="nav-menu-item">
                 <a href="#skills" class="nav-menu-link"><i class="fas fa-graduation-cap"></i> Skills</a>
             </li>
-            <li class="nav-menu-item">
+            <li data-aos="fade-down-left"  class="nav-menu-item">
                 <a href="#contact" class="nav-menu-link"><i class="far fa-envelope"> </i> Contact</a>
             </li>
 
@@ -113,16 +113,16 @@
     <div id="side-nav" class="side-nav">
         <h3 class="side-nav-header">MENU</h3>
         <ul class="side-nav-menu">
-            <li class="side-nav-item">
+            <li data-aos="fade-down-left" class="side-nav-item">
                 <a href="#about" class="side-nav-link">A propos</a>
             </li>
-            <li class="side-nav-item">
+            <li data-aos="fade-down-left" class="side-nav-item">
                 <a href="#projet" class="side-nav-link">Projets</a>
             </li>
-            <li class="side-nav-item">
+            <li data-aos="fade-down-left" class="side-nav-item">
                 <a href="#skills" class="side-nav-link">Skills</a>
             </li>
-            <li class="side-nav-item">
+            <li data-aos="fade-down-left" class="side-nav-item">
                 <a href="#contact" class="side-nav-link">Contact</a>
             </li>
         </ul>
@@ -131,12 +131,12 @@
 
     <section class="top">
         <div class="boxTopLeft">
-            <h1 class="prenom">Dylan</h1>
-            <h1 class="nom">Weisse</h1>
+            <h1 data-aos="fade-left" class="prenom">Dylan</h1>
+            <h1 data-aos="fade-right" class="nom">Weisse</h1>
 
             <img src="./Image/design/fond_top_left.png" alt="" class="imgTopLeft">
         </div>
-        <div class="boxTopRight">
+        <div data-aos="flip-left" class="boxTopRight">
             <p class="concepteur">concepteur developpeur d'application</p>
         </div>
     </section>
@@ -194,7 +194,7 @@
 
         <div class="flex-card-box">
 
-            <div class="flip-card">
+            <div data-aos-duration="500" data-aos="zoom-in" class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./Image/picsSkills/front.png" alt="">
@@ -215,7 +215,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div data-aos-duration="1000" data-aos="zoom-in" class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./Image/picsSkills/back.png" alt="">
@@ -237,7 +237,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div data-aos-duration="1500" data-aos="zoom-in" class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./Image/picsSkills/conception.png" alt="">
@@ -259,7 +259,7 @@
                 </div>
             </div>
 
-            <div class="flip-card">
+            <div data-aos-duration="2000" data-aos="zoom-in" class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./Image/picsSkills/environnement.png" alt="Avatar">
@@ -343,5 +343,8 @@
 
     </body>
 
+    <script>
+        AOS.init();
+    </script>
 
 </html>
